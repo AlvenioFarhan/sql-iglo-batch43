@@ -1,0 +1,4 @@
+--1. Employee performance after 1996.sql
+--Atasan ingin mengetahui berapa jumlah penjualan yang dihasilkan setiap karyawannya setelah tahun 
+--1996. Buatlah query yang menghasilkan laporan berisi, nama lengkap karyawannya dan total jumlah 
+--ordernya setelah tahun 1996.select * from Ordersselect * from [Order Details]select * from Employeesselect CONCAT(e.FirstName, ' ', e.LastName)NamaLengkap, COUNT(od.OrderID)JumlahOrderfrom Orders ojoin Employees e on o.EmployeeID = e.EmployeeIDjoin [Order Details] od on o.OrderID = od.OrderIDwhere DATENAME(YEAR, o.OrderDate) >= 1996group by e.FirstName, e.LastName, e.EmployeeIDorder by NamaLengkap asc

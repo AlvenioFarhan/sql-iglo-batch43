@@ -1,0 +1,25 @@
+5 select [kolom]
+1 from [table name]
+1 join [table name]
+2 where [kondisi]
+3 group by [kolom]
+4 having [kolom] ketika ada aggregate function sql
+6 order by [kolom]
+
+Penghubung 2 kondisi:
+OR
+AND
+
+tidak sama dengan
+!=
+<>
+
+3 value :
+1. scalar = 1 data
+select 'Alvenio'
+
+2. list value = 1 list/lebih dari 1 scalar
+
+3. tabel value = banyak data/list
+
+
